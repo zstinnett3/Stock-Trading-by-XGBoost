@@ -1,2 +1,2 @@
 # Stock-Trading-by-XGBoost
-Here after using some data preparation, I used XGBoost to classify potentially good trades. 
+Here after using some data preparation, I used XGBoost to classify potentially good trades. To create training data, I added a label to a timestep as to whether you should buy a call, a put or do nothing based on whether the stock moved a specified amount in the hours ahead. I then added many technical indicators to the dataframe, then using a cross-validated hyperparameter tuned XGBoost run on the data after dropping the datetime column. Results were promising so far. 
